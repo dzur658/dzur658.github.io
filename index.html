@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Dzurec — Applied AI Engineer</title>
+  <meta name="description" content="Alex Dzurec (dzur658) — Applied AI engineer working on LLM fine-tuning, quantization, synthetic data, and efficient local AI. Portfolio, projects, and skills.">
+  <meta property="og:title" content="Alex Dzurec — Applied AI Engineer">
+  <meta property="og:description" content="LLM fine-tuning, quantization, synthetic data, and efficient local AI.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="%234f46e5"/><text x="50" y="70" font-size="54" text-anchor="middle" fill="white" font-family="ui-monospace, monospace">d.</text></svg>'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">dzur658</p>
+      <h1>Alex Dzurec</h1>
+      <p class="tagline">Applied AI Engineer · NLP &amp; LLM Fine-Tuning</p>
+      <p class="lede">MS&#8209;CS student at CU Boulder building efficient, local&#8209;first language models — fine&#8209;tuning, quantization, and synthetic data.</p>
+      <nav class="social" aria-label="Profiles">
+        <a href="https://github.com/dzur658">GitHub&nbsp;↗</a>
+        <a href="https://huggingface.co/dzur658">Hugging&nbsp;Face&nbsp;↗</a>
+        <a href="https://www.linkedin.com/in/alex-dzurec/">LinkedIn&nbsp;↗</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I work across the full small&#8209;model lifecycle: curating and synthesizing training data, fine&#8209;tuning
+        (full and LoRA), quantizing for GGUF and MLX, and running models entirely on&#8209;device. I hold a
+        B.S. in IT &amp; Cybersecurity from the University of Cincinnati (summa cum laude), and I'm
+        currently an M.S. Computer Science student at the University of Colorado Boulder.
+      </p>
+      <p>
+        My current research focus is continued pretraining of small language models in Spanish and more
+        rigorous evaluation of hallucinations. Open to applied AI engineering roles.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <p class="card-tag">Local AI · Full pipeline</p>
+          <h3>Ping</h3>
+          <p>Keep personal IoT devices up to date with a local AI assistant — TypeScript app backed by purpose&#8209;built 2B models: LoRA adapters, fused checkpoints, GGUF/MLX quantizations, and synthetic datasets for device identification and technical support.</p>
+          <p class="links">
+            <a href="https://github.com/dzur658/ping">Code&nbsp;↗</a>
+            <a href="https://huggingface.co/dzur658/ping-technical-assistant-fused-gguf-001">Models&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">NLP · Fine-tuning</p>
+          <h3>TherapyBERT</h3>
+          <p>BERT&#8209;family models fine&#8209;tuned for therapy conversations: a token&#8209;classification NER model and a relation&#8209;extraction model, trained on a curated 3k+ row therapy&#8209;conversations dataset.</p>
+          <p class="links">
+            <a href="https://github.com/dzur658/therapy-bert">Code&nbsp;↗</a>
+            <a href="https://huggingface.co/dzur658/TherapyBERT-NER-001">Models&nbsp;↗</a>
+            <a href="https://huggingface.co/datasets/dzur658/therapy-conversations-full-small">Dataset&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Interpretability · Research</p>
+          <h3>H&#8209;Neurons&#8209;Auto</h3>
+          <p>An automatic, fully local implementation of the paper <em>“H&#8209;Neurons: On the Existence, Impact, and Origin of Hallucination&#8209;Associated Neurons in LLMs.”</em></p>
+          <p class="links">
+            <a href="https://github.com/dzur658/H-Neurons-Auto">Code&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Quantization</p>
+          <h3>Polaris&#8209;4B IQ&#8209;GGUF</h3>
+          <p>Scripts and artifacts for imatrix&#8209;based IQ GGUF quantizations of Polaris&#8209;4B — pushing a 4B model into efficient, high&#8209;quality local builds.</p>
+          <p class="links">
+            <a href="https://github.com/dzur658/Polaris-4B-Preview-IQ-GGUF">Code&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Synthetic Data</p>
+          <h3>searxng&#8209;tool</h3>
+          <p>Synthetic data generation grounded by a real web browser via SearXNG, so generated training examples are tied to real sources instead of model fabrications.</p>
+          <p class="links">
+            <a href="https://github.com/dzur658/searxng-tool">Code&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Multilingual · Pretraining</p>
+          <h3>Spanish SLM Pretraining</h3>
+          <p>Continued pretraining of small language models in Spanish, with curated datasets built from CallHome Spanish transcripts and OPUS Spanish monologues.</p>
+          <p class="links">
+            <a href="https://huggingface.co/datasets/dzur658/callhome-es-transcripts">CallHome&nbsp;↗</a>
+            <a href="https://huggingface.co/datasets/dzur658/opus-es-monologues">OPUS&nbsp;↗</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Evaluation · Dataset</p>
+          <h3>Grounded vs. Fabricated</h3>
+          <p>An 8.25k&#8209;row dataset distinguishing grounded answers from fabricated ones — built for sharper hallucination benchmarks and evaluation work.</p>
+          <p class="links">
+            <a href="https://huggingface.co/datasets/dzur658/grounded-vs-fabricated-hallucinations">Dataset&nbsp;↗</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Full Fine-Tuning</li>
+        <li>LoRA</li>
+        <li>Quantization (GGUF · MLX · Imatrix)</li>
+        <li>Synthetic Data Generation</li>
+        <li>Model Evaluation</li>
+        <li>Multilingual NLP</li>
+        <li>On-Device Inference</li>
+        <li>PyTorch</li>
+        <li>Hugging Face Ecosystem</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li>NVIDIA Certified Associate — Generative AI LLMs (NCA&#8209;GENL)</li>
+        <li>NVIDIA Certified — Multimodal Generative AI</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Alex Dzurec</p>
+    <nav aria-label="Profiles">
+      <a href="https://github.com/dzur658">GitHub</a>
+      <a href="https://huggingface.co/dzur658">Hugging Face</a>
+      <a href="https://www.linkedin.com/in/alex-dzurec/">LinkedIn</a>
+    </nav>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
